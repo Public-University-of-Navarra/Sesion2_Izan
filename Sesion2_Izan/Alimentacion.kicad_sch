@@ -742,7 +742,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25acaec4-1f58-42e1-9b0a-f493b4a383a1")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR0202"
 			(at 138.43 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -802,7 +802,7 @@
 		(instances
 			(project "Sesion2_Izan"
 				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/67a69597-7fdb-464d-b33e-0e119b3f6ebb"
-					(reference "#PWR02")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -820,7 +820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c6a173f-434e-4a5e-96d4-90c102f90d20")
-		(property "Reference" "U1"
+		(property "Reference" "U201"
 			(at 138.43 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -907,7 +907,7 @@
 		(instances
 			(project "Sesion2_Izan"
 				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/67a69597-7fdb-464d-b33e-0e119b3f6ebb"
-					(reference "U1")
+					(reference "U201")
 					(unit 1)
 				)
 			)
@@ -925,7 +925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ef67019-81c5-4564-9340-96e002dd773e")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR0201"
 			(at 121.92 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -985,7 +985,7 @@
 		(instances
 			(project "Sesion2_Izan"
 				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/67a69597-7fdb-464d-b33e-0e119b3f6ebb"
-					(reference "#PWR01")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
@@ -1003,7 +1003,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a0876b5-a2ef-4d27-a374-534125af60a1")
-		(property "Reference" "C2"
+		(property "Reference" "C202"
 			(at 157.48 105.7909 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1089,7 +1089,7 @@
 		(instances
 			(project "Sesion2_Izan"
 				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/67a69597-7fdb-464d-b33e-0e119b3f6ebb"
-					(reference "C2")
+					(reference "C202")
 					(unit 1)
 				)
 			)
@@ -1107,7 +1107,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a03e605e-3e9a-4756-a9e3-e816957d5e5b")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR0203"
 			(at 153.67 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -1167,7 +1167,7 @@
 		(instances
 			(project "Sesion2_Izan"
 				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/67a69597-7fdb-464d-b33e-0e119b3f6ebb"
-					(reference "#PWR03")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -1185,7 +1185,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9712058-f68e-4658-a183-b42e18a6ae91")
-		(property "Reference" "C1"
+		(property "Reference" "C201"
 			(at 125.73 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1271,7 +1271,7 @@
 		(instances
 			(project "Sesion2_Izan"
 				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/67a69597-7fdb-464d-b33e-0e119b3f6ebb"
-					(reference "C1")
+					(reference "C201")
 					(unit 1)
 				)
 			)
