@@ -545,10 +545,10 @@ Sin ficheros temporales versionados: no hay `.lck`, `.kicad_prl`, `.history`, ba
 | 1 | `e417981` | S3: carry over pending KiCad edits found uncommitted on main | Los 3 cambios de Izan que estaban sin commit en main (§2), sin modificar |
 | 2 | `a17f5f1` | S3: add MCU decoupling and power test points | C302, C303, TP201–TP203, designadores, BOM y `S3_validation/ERC_report.*` |
 | 3 | `68b1507` | S3: implement PCB layout and routing | `.kicad_pcb` completo; `.kicad_pro` con reglas, tamaños y net classes; `.kicad_dru` nuevo |
-| 4 | (ver resumen final) | S3: validate DRC and finalize PCB | `S3_validation/` completa (ERC/DRC regenerados al final) y este informe |
+| 4 | `d7420ed` | S3: validate DRC and finalize PCB | `S3_validation/` completa (ERC/DRC regenerados al final) y este informe |
 | 5 | (ver resumen final) | S3: record final git audit in report | Solo este apartado, con la salida de la auditoría final |
 
-Un commit no puede llevar su propio hash, así que los de los commits 4 y 5 están en el resumen final del chat y en `git log`.
+Un commit no puede llevar su propio hash, así que el del commit 5 está en el resumen final del chat y en `git log`.
 
 **Push:** **BLOQUEADO.**
 - Se intentó `git push -u origin sesion3-pcb` tras el commit de layout y de nuevo tras los de validación y auditoría.
@@ -557,7 +557,37 @@ Un commit no puede llevar su propio hash, así que los de los commits 4 y 5 est�
 
 **Copias de seguridad locales** (no publicadas): `stash@{0}` (`96d71b6…`) y la etiqueta `S2_FINAL_BASELINE` → `9509303`.
 
-**Auditoría final:** *(se rellena en el commit 5)*.
+**Auditoría final.** Ejecutada después del commit 4 (`d7420ed`). El commit 5 solo añade este apartado.
+
+`git status`:
+```
+On branch sesion3-pcb
+nothing to commit, working tree clean
+```
+
+`git log --oneline --decorate -10`:
+```
+d7420ed (HEAD -> sesion3-pcb) S3: validate DRC and finalize PCB
+68b1507 S3: implement PCB layout and routing
+a17f5f1 S3: add MCU decoupling and power test points
+e417981 S3: carry over pending KiCad edits found uncommitted on main
+9509303 (tag: S2_FINAL_BASELINE, origin/microcontrolador, origin/main, origin/HEAD, microcontrolador, main) Complete microcontroller schematic and BOM
+d26830f (origin/alimentacion, alimentacion) Complete power supply schematic
+778da5e Create KiCad project hierarchy
+1201375 Initial commit
+```
+
+`git diff main...HEAD --stat`: 36 ficheros, 10 047 inserciones y 13 borrados. Son exactamente los de §23: 5 ficheros del proyecto KiCad modificados, `Sesion2_Izan.kicad_dru` nuevo, la BOM, los 28 ficheros de `S3_validation/` y este informe.
+
+| Comprobación | Resultado |
+|---|---|
+| Rama activa ≠ main | ✅ `sesion3-pcb` |
+| main sigue en el baseline | ✅ `main` = `95093034…` |
+| origin/main no modificado | ✅ `origin/main` = `95093034…`. `git ls-remote origin` da `refs/heads/main` = `95093034…` en el servidor |
+| Rama S3 subida | ❌ **BLOQUEADO** (403). `git ls-remote` solo muestra `main`, `alimentacion` y `microcontrolador` |
+| Temporales versionados | ✅ ninguno: ni `.lck`, ni `.kicad_prl`, ni `.history`, ni backups, ni `__pycache__`, ni `fp-info-cache` |
+| Informe final | ✅ `S3_AUTONOMOUS_REPORT.md` en la raíz del repo |
+| KiCad abre y valida los ficheros | ✅ sobre los ficheros versionados: ERC 0 errores / 0 avisos; DRC 0 / 0 / 0 con y sin relleno de zonas; `regenerate.sh` reconstruye la placa desde el esquema fuera del repo y sale `GEOMETRY IDENTICAL` |
 
 ---
 
