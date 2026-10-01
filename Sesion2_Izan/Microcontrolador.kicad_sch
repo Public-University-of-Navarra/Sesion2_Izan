@@ -1634,6 +1634,12 @@
 			(embedded_fonts no)
 		)
 	)
+	(junction
+		(at 165.1 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97f8a79e-142a-5918-9334-50825ca57970")
+	)
 	(no_connect
 		(at 160.02 80.01)
 		(uuid "09df216f-5c39-4564-ab62-a19f040000f4")
@@ -1910,6 +1916,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 45.72) (xy 180.34 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a680e682-8992-57c7-99ae-26759dde3143")
+	)
+	(wire
+		(pts
 			(xy 181.61 77.47) (xy 186.69 77.47)
 		)
 		(stroke
@@ -1917,6 +1933,16 @@
 			(type default)
 		)
 		(uuid "afcfd428-ed05-409b-8e16-82cb4e3ee203")
+	)
+	(wire
+		(pts
+			(xy 142.24 45.72) (xy 165.1 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca37724e-7b32-5bbc-9c2b-62ba2c217881")
 	)
 	(wire
 		(pts
@@ -2221,6 +2247,84 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 180.34 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37cce27c-2c04-50b3-8c79-251fb7201a87")
+		(property "Reference" "#PWR0306"
+			(at 180.34 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.34 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 180.34 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec8b2eca-f716-542d-9714-47e84959e9ea")
+		)
+		(instances
+			(project "Sesion2_Izan"
+				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/0e2e0d60-db9b-4772-b3f9-4138e80eb24a"
+					(reference "#PWR0306")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 99.06 64.77 0)
 		(unit 1)
 		(body_style 1)
@@ -2292,6 +2396,110 @@
 			(project "Sesion2_Izan"
 				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/0e2e0d60-db9b-4772-b3f9-4138e80eb24a"
 					(reference "#PWR0302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 165.1 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67f61c9e-4bcb-58e8-bd14-26978d39ad37")
+		(property "Reference" "C302"
+			(at 168.91 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 168.91 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 166.0652 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 165.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 165.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21B104KBCNFNC"
+			(at 165.1 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b4a11dc8-03ea-5df4-8930-3be97c506a25")
+		)
+		(pin "1"
+			(uuid "6247ac04-d5a7-502d-964b-7bac9091fc1d")
+		)
+		(instances
+			(project "Sesion2_Izan"
+				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/0e2e0d60-db9b-4772-b3f9-4138e80eb24a"
+					(reference "C302")
 					(unit 1)
 				)
 			)
@@ -2594,6 +2802,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 180.34 49.53 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b2fa58b7-d1e2-5722-9cf0-3b6e1d90b73a")
+		(property "Reference" "C303"
+			(at 184.15 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 184.15 50.7999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 181.3052 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 180.34 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 180.34 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21B475KAFNNNE"
+			(at 180.34 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "386f327e-e3ca-5337-8d92-6e0dd5990b91")
+		)
+		(pin "1"
+			(uuid "d26f5d1c-20fc-5fb0-9ae9-0917d29f9b97")
+		)
+		(instances
+			(project "Sesion2_Izan"
+				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/0e2e0d60-db9b-4772-b3f9-4138e80eb24a"
+					(reference "C303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MCU_ST_STM32G0:STM32G030K8Tx")
 		(at 142.24 85.09 0)
 		(unit 1)
@@ -2783,6 +3095,84 @@
 			(project "Sesion2_Izan"
 				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/0e2e0d60-db9b-4772-b3f9-4138e80eb24a"
 					(reference "U301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ba5045e3-f20d-5475-90b7-a7314e1dc870")
+		(property "Reference" "#PWR0305"
+			(at 165.1 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06521dae-e452-57f2-9737-14007b921d2f")
+		)
+		(instances
+			(project "Sesion2_Izan"
+				(path "/e349a083-9e3b-40e5-ab26-55c4e44866b1/0e2e0d60-db9b-4772-b3f9-4138e80eb24a"
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
