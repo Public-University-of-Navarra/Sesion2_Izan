@@ -2319,7 +2319,7 @@
 				)
 			)
 		)
-		(property "Value" "100 nF"
+		(property "Value" "100nF"
 			(at 109.22 59.69 90)
 			(show_name no)
 			(do_not_autoplace no)
