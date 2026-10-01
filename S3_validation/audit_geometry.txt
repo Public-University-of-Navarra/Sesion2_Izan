@@ -1,0 +1,51 @@
+EDGE.CUTS items: 1 ['S_RECT']
+BOARD SIZE: 39.05 x 26.75 mm (bbox of Edge.Cuts)
+closed outline polygon: True outlines: 1
+footprints: 19 all on F.Cu: True
+
+NET | class | widths used (mm) | F.Cu len | B.Cu len | segments
+/Alimentacion/VIN            POWER   [0.6]                   22.96   0.00   5
+/Microcontrolador/3V3        POWER   [0.6]                   58.08   0.00  16
+/Microcontrolador/AIN1       SIGNAL  [0.25]                  14.57   0.00   4
+/Microcontrolador/AIN1_EXT   SIGNAL  [0.25]                   6.50   0.00   5
+/Microcontrolador/AIN2       SIGNAL  [0.25]                   7.40   0.00   4
+/Microcontrolador/AIN2_EXT   SIGNAL  [0.25]                   4.82   0.00   5
+/Microcontrolador/AIN3       SIGNAL  [0.25]                   5.07   0.00   2
+/Microcontrolador/AIN3_EXT   SIGNAL  [0.25]                   3.28   0.00   2
+/Microcontrolador/NRST       SIGNAL  [0.25]                   7.32  11.12   6
+/Microcontrolador/OUT1       SIGNAL  [0.25]                   8.11   0.00   4
+/Microcontrolador/SWCLK      SIGNAL  [0.25]                   6.94   0.00   5
+/Microcontrolador/SWDIO      SIGNAL  [0.25]                   6.72   0.00   4
+GND                          GND     [0.4, 0.5, 1.0, 1.3]    17.47   0.00  10
+single-pad 'unconnected-*' nets (MCU NC pins): 23 -> class {'Default'}
+
+VIAS: 6
+  via net=GND                        at (26.00, 11.90) dia 0.80 drill 0.40 type 4
+  via net=GND                        at (16.00, 12.20) dia 0.80 drill 0.40 type 4
+  via net=GND                        at (13.75, 6.56) dia 0.80 drill 0.40 type 4
+  via net=GND                        at (20.75, 3.50) dia 0.80 drill 0.40 type 4
+  via net=GND                        at (25.25, 21.85) dia 0.80 drill 0.40 type 4
+  via net=/Microcontrolador/NRST     at (26.60, 13.30) dia 0.60 drill 0.30 type 4
+
+MIN track-track edge distance (different nets, same layer): 0.300 mm ('/Microcontrolador/3V3', 'GND')
+MIN track-pad distance (different nets): 0.245 mm ('/Microcontrolador/AIN1_EXT', 'J301.1')
+MIN track-via distance (different nets): 0.275 mm ('/Microcontrolador/NRST', 'GND')
+
+Interior angles at 2-segment joints (180 = straight): {90: 5, 135: 39, 180: 4}
+ACUTE joints (<90 deg): []
+Junctions with 3 or more arms (incl. T on a track interior): 3
+ACUTE angles between adjacent arms at any junction: none
+ZONE GND_F F.Cu GND filled: True area 605.3 mm2 clearance 0.3 thermal gap 0.3 spoke 0.4
+ZONE GND_B B.Cu GND filled: True area 889.8 mm2 clearance 0.3 thermal gap 0.3 spoke 0.4
+
+RULES: min clearance 0.200, min track 0.250, min via 0.500, min drill 0.300, edge clearance 0.500, board thickness 1.600, copper layers 2, has stackup True
+NETCLASS Default  clearance 0.20 track 0.25 via 0.60/0.30 priority 2147483647
+NETCLASS GND      clearance 0.20 track 1.30 via 0.80/0.40 priority 0
+NETCLASS POWER    clearance 0.20 track 0.60 via 0.80/0.40 priority 1
+NETCLASS SIGNAL   clearance 0.20 track 0.25 via 0.60/0.30 priority 2
+
+SILK legends closer than 0.15 mm to a mask opening: none
+SILK legend pairs closer than 0.2 mm: none
+SILK legend -> nearest footprint silkscreen graphic (5 smallest): [(0.242, 'C301', 'C301'), (0.28, 'VIN', 'TP201'), (0.292, 'GND', 'TP203'), (0.296, 'TP202', 'C401'), (0.297, '3V3', 'TP202')]
+VIA drills closer than 0.1 mm to footprint silkscreen (fab clips the silk there): [('GND', 25.25, 21.85, 'J301', -0.14)]
+SILK legend sizes: [(0.8, 0.15), (1.0, 0.15)]
