@@ -1,0 +1,9 @@
+(version 1)
+
+# DEE Session 3 design rules (requirement: clearance 0.20 mm, track width and
+# track-to-track distance 0.25 mm). Board minimum clearance (0.20) and minimum
+# track width (0.25) are set in Board Setup > Constraints; this rule adds the
+# stricter distance between tracks of different nets.
+(rule "Track to track distance 0.25 mm"
+	(constraint clearance (min 0.25mm))
+	(condition "A.Type == 'Track' && B.Type == 'Track'"))
